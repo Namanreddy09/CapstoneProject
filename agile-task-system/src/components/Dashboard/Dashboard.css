@@ -1,0 +1,157 @@
+/* dashboard.css */
+
+/* Dashboard Container */
+.dashboard-container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: rgba(241, 222, 76, 0.9); /* Semi-transparent white background */
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: relative;
+  z-index: 1;
+  overflow: hidden; /* Ensure the background image doesn't overflow */
+}
+
+/* Background Image */
+.dashboard-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('C:\Wipro Hands on\CapstoneProject\agile-task-system\src\components\Dashboard/image1.jpg'); /* Replace with your image path */
+  background-size: cover; /* Ensures the image covers the entire container */
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  opacity: 0.3; /* Adjust opacity for better readability */
+  z-index: -1; /* Places the image behind the content */
+  border-radius: 8px;
+}
+
+/* Header */
+.dashboard-container h2 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Add Scrum Section */
+.add-scrum-section {
+  margin-bottom: 20px;
+}
+
+.toggle-form-btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.toggle-form-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Scrum Form */
+.scrum-form {
+  background-color: rgba(255, 255, 255, 0.95); /* Semi-transparent white background */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-top: 10px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.submit-btn {
+  background-color: #28a745;
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.submit-btn:hover {
+  background-color: #218838;
+}
+
+/* Scrum List */
+.scrum-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.scrum-item {
+  background-color: rgba(255, 255, 255, 0.95); /* Semi-transparent white background */
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.scrum-item h3 {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.scrum-item p {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 5px;
+}
+
+.scrum-item button {
+  background-color: #18eace;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  margin-right: 5px;
+}
+
+.scrum-item button:hover {
+  background-color: #c82333;
+}
+
+.scrum-item button.edit-btn {
+  background-color: #ff3407;
+  color: #333;
+}
+
+.scrum-item button.edit-btn:hover {
+  background-color: #e0a800;
+}

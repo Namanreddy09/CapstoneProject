@@ -1,0 +1,106 @@
+/* Scrum Details Container */
+.scrum-details-container {
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  margin: 20px auto;
+}
+
+/* Scrum Details Header */
+.scrum-details-container h3 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Tasks and Users Sections */
+.scrum-details-container h4 {
+  font-size: 20px;
+  color: #555;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #30d9e6; /* Updated to match the gradient theme */
+  padding-bottom: 5px;
+}
+
+/* Task List */
+.scrum-details-container ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.scrum-details-container ul li {
+  background-color: #f9f9f9;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.scrum-details-container ul li strong {
+  color: #333;
+}
+
+.scrum-details-container ul li em {
+  color: #555;
+  font-style: italic;
+}
+
+/* Status Dropdown */
+.scrum-details-container select {
+  padding: 5px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+  background-color: #fff;
+  cursor: pointer;
+  transition: border-color 0.3s ease;
+}
+
+.scrum-details-container select:focus {
+  border-color: #30d9e6; /* Updated to match the gradient theme */
+  outline: none;
+}
+
+/* Users List */
+.scrum-details-container ul li {
+  background-color: #f9f9f9;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.scrum-details-container ul li {
+  color: #333;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .scrum-details-container {
+      padding: 15px;
+  }
+
+  .scrum-details-container h3 {
+      font-size: 20px;
+  }
+
+  .scrum-details-container h4 {
+      font-size: 18px;
+  }
+
+  .scrum-details-container ul li {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+  .scrum-details-container select {
+      width: 100%;
+      margin-top: 10px;
+  }
+}
